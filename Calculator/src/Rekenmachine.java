@@ -18,6 +18,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
+
+//Frame voor rekenmachine
 public class Rekenmachine extends JFrame {
 	public static void main( String args[ ]) {
 		JFrame frame = new Rekenmachine();

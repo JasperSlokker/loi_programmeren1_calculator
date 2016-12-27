@@ -78,7 +78,8 @@ catch (NumberFormatException f ) {
 		private JButton[] numButtons;
 		double invoergetal1, invoergetal2, resultaatgetal;
 		private JTextField invoerVeld;
-		public JLabel reclame;
+		//public JLabel reclame;
+		private JButton reclame;
 
 		public RekenmachinePaneel() {
 			setLayout(new BorderLayout(5, 5));
@@ -95,13 +96,17 @@ catch (NumberFormatException f ) {
 				btn.addActionListener(new ButtonActie());
 				numButtons[i] = btn;
 				buttons.add(btn);
+				
+			
 			}
 
 			invoerVeld = new JTextField();
 			invoerVeld.setSize(new Dimension(60, 60));
+		
 
-			reclame = new JLabel();
-			reclame.setSize(new Dimension(60, 60));
+			reclame = new JButton("Reclame");
+			//reclame.setSize(new Dimension(60, 60));
+			
 
 			add(invoerVeld, BorderLayout.NORTH);
 			add(buttons, BorderLayout.CENTER);
